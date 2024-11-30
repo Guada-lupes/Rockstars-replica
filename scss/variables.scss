@@ -1,0 +1,24 @@
+
+/*colores*/
+
+$first-color: #000; /*todo lo negro*/
+$second-color: #0B0B0B; /*bgc*/
+$third-color: #FFFFFF; /*color texto*/
+$fourth-color: #282828; /*color barra buscar y bordes */
+$fifth-color: #272727; /*fondo circulo usuario*/
+$six-color: #999999; /*puntos carrusel*/
+$buttom-color: #FCAF17; /*boton*/
+$seven-color: #1A1A1A; /* hover suscríbite*/
+
+/*font-size*/
+@font-face {
+    font-family: helveticanowtext;
+    src: url(../fonts/helvetica-now-font-family-1732613676-0/helveticanowtext-black-demo.ttf);
+}
+@font-face {
+    font-family: helveticanowdisplay-bold;
+    src: url(../fonts/helvetica-now-display/HelveticaNowDisplay-Bold.ttf);
+}
+
+$first-font: helveticanowtex-black;
+$second-font: helveticanowdisplay-bold;

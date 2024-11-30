@@ -1,0 +1,117 @@
+@import "resets";
+@import "variables";
+
+*{
+    /*border: solid 2px blue*/
+}
+
+body{
+    background-color: $second-color;
+
+    .header{
+        background-color: $first-color;
+        border-bottom: 1px solid $fourth-color;
+        width: 100%;
+        height: 60px;
+        color: white;
+        
+    }
+    .header-nav{
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        }
+        .burger-label{
+            display: flex;
+            align-items: center;
+            svg{
+                width: 30px;
+                margin-left: 20px;
+                cursor: pointer;
+                
+                 }
+        }
+        
+        #burger-menu{
+            display: none;
+
+                &:checked+ #menu-desplegable{
+                    height: 800px;
+                    
+                }
+        }
+        .ul-links{
+            background-color: #000;
+            position: absolute;
+            width: 100%;
+            top:60px;
+            /*height: 0;
+            overflow: hidden;*/
+
+        } 
+            .buscar{
+                background-color: $fourth-color;
+                display: flex;
+                gap: 5px;
+                height: 40px;
+                align-content: center;
+                
+                .buscar-elementos{
+                    font-size: 12px;
+                    width: 100%;
+                    display: flex;
+                    align-items: center;
+                    gap: 5px;
+                    margin-left: 20px;
+
+                svg{
+                    width: 15px;
+                }
+        }
+    }
+        
+    .juegos-contenedor{
+            width: 100%;
+            height: 60px;
+            display: flex;
+            margin-left: 20px;
+            align-items: baseline;
+            
+            .titulo{
+                display: flex;
+                margin-top: 20px;
+                
+            }
+            .ver-todo{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: end;
+                margin-right: 50px;
+                 
+                gap: 5px;
+                
+                
+                span{
+                    text-transform:uppercase;
+                    font-size: 10px;
+                    font-weight: bold;
+                    
+                }
+                svg{
+                    width: 15px;
+            }
+            
+        }
+    }
+        input {
+            &:checked + .ul-links{
+                height: 300px;
+            }
+        }
+        
+    }
+
+
