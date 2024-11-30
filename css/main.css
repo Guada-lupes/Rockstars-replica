@@ -86,25 +86,25 @@ body .burger-label svg {
 body #burger-menu {
   display: none;
 }
-body #burger-menu:checked + #menu-desplegable {
-  height: 800px;
-}
 body .ul-links {
   background-color: #000;
   position: absolute;
   width: 100%;
   top: 60px;
-  /*height: 0;
-  overflow: hidden;*/
+  /*display: none;*/
 }
-body .buscar {
+body .burger-checkbox:checked + .ul-links {
+  display: block;
+}
+
+.buscar {
   background-color: #282828;
   display: flex;
   gap: 5px;
   height: 40px;
   align-content: center;
 }
-body .buscar .buscar-elementos {
+.buscar .buscar-elementos {
   font-size: 12px;
   width: 100%;
   display: flex;
@@ -112,21 +112,22 @@ body .buscar .buscar-elementos {
   gap: 5px;
   margin-left: 20px;
 }
-body .buscar .buscar-elementos svg {
+.buscar .buscar-elementos svg {
   width: 15px;
 }
-body .juegos-contenedor {
+
+.juegos-contenedor {
   width: 100%;
   height: 60px;
   display: flex;
   margin-left: 20px;
   align-items: baseline;
 }
-body .juegos-contenedor .titulo {
+.juegos-contenedor .titulo {
   display: flex;
   margin-top: 20px;
 }
-body .juegos-contenedor .ver-todo {
+.juegos-contenedor .ver-todo {
   width: 100%;
   display: flex;
   align-items: center;
@@ -134,16 +135,69 @@ body .juegos-contenedor .ver-todo {
   margin-right: 50px;
   gap: 5px;
 }
-body .juegos-contenedor .ver-todo span {
+.juegos-contenedor .ver-todo span {
   text-transform: uppercase;
   font-size: 10px;
   font-weight: bold;
 }
-body .juegos-contenedor .ver-todo svg {
+.juegos-contenedor .ver-todo svg {
   width: 15px;
 }
-body input:checked + .ul-links {
-  height: 300px;
+
+.li-imagenes {
+  width: 100%;
+  display: flex;
+  gap: 15px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+}
+.li-imagenes .img-borde {
+  border: solid 1px #282828;
+  border-radius: 5px;
+}
+.li-imagenes .img-borde img {
+  height: 150px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+#ul .link-texto {
+  width: 90vw;
+  height: 45px;
+  align-content: center;
+  margin-left: 20px;
+}
+#ul .link-texto span {
+  font-weight: bold;
+}
+#ul .link-texto svg {
+  width: 15px;
+}
+#ul .tienda, #ul .asistencia {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#ul .buttom {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ul .buttom .buttom-diseño {
+  height: 65%;
+  width: 90%;
+  background-color: #FCAF17;
+  color: #000;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#ul .buttom .buttom-diseño p {
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: bold;
 }
 
 /*# sourceMappingURL=main.css.map */

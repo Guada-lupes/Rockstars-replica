@@ -36,19 +36,19 @@ body{
         
         #burger-menu{
             display: none;
-
-                &:checked+ #menu-desplegable{
-                    height: 800px;
-                    
-                }
         }
+
         .ul-links{
             background-color: #000;
             position: absolute;
             width: 100%;
             top:60px;
-            /*height: 0;
-            overflow: hidden;*/
+            /*display: none;*/
+        }
+        .burger-checkbox:checked + .ul-links{
+                    
+                    display: block;
+                }
 
         } 
             .buscar{
@@ -90,9 +90,7 @@ body{
                 align-items: center;
                 justify-content: end;
                 margin-right: 50px;
-                 
                 gap: 5px;
-                
                 
                 span{
                     text-transform:uppercase;
@@ -106,12 +104,76 @@ body{
             
         }
     }
-        input {
-            &:checked + .ul-links{
-                height: 300px;
+        .li-imagenes{
+            width: 100%;
+            display: flex;
+            gap: 15px;
+            margin-left: 20px;
+            margin-bottom: 10px;
+
+
+            .img-borde{
+
+                border: solid 1px $fourth-color;
+                border-radius: 5px;
+
+                img{
+                    height: 150px;
+                    object-fit: contain;
+                    border-radius: 5px;
+                }
+            }
+            
+            
+        }
+        #ul{
+
+            .link-texto{
+                width: 90vw;
+                height: 45px;
+                align-content: center;
+                margin-left: 20px;
+                
+                span{
+                    font-weight: bold;
+                }
+                svg{
+                    width: 15px;
+                }
+        }
+        .tienda{
+                
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+        }
+        .asistencia{
+            @extend .tienda
+        }
+        .buttom{
+            height: 60px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            .buttom-diseño{
+                height: 65%;
+                width: 90%;
+                background-color: $buttom-color;
+                color: #000;
+                border-radius: 5px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            p{
+                text-transform: uppercase;
+                font-size: 13px;
+                font-weight: bold;
+            }
             }
         }
+        }
         
-    }
+    
 
 
