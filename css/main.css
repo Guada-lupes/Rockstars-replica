@@ -89,9 +89,12 @@ body #burger-menu {
 body .ul-links {
   background-color: #000;
   position: absolute;
-  width: 100%;
+  width: 100vw;
   top: 60px;
-  /*display: none;*/
+  display: none;
+}
+body .ul-links .link:not(.buttom, .buscar) {
+  margin-left: 20px;
 }
 body .burger-checkbox:checked + .ul-links {
   display: block;
@@ -117,7 +120,7 @@ body .burger-checkbox:checked + .ul-links {
 }
 
 .juegos-contenedor {
-  width: 100%;
+  width: 90vw;
   height: 60px;
   display: flex;
   margin-left: 20px;
@@ -132,7 +135,6 @@ body .burger-checkbox:checked + .ul-links {
   display: flex;
   align-items: center;
   justify-content: end;
-  margin-right: 50px;
   gap: 5px;
 }
 .juegos-contenedor .ver-todo span {
@@ -148,7 +150,6 @@ body .burger-checkbox:checked + .ul-links {
   width: 100%;
   display: flex;
   gap: 15px;
-  margin-left: 20px;
   margin-bottom: 10px;
 }
 .li-imagenes .img-borde {
