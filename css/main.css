@@ -56,17 +56,21 @@ a {
 body {
   background-color: #0B0B0B;
   /*HEADER*/
-  /*DESPLEGABLE*/
 }
-body .header {
+
+.header {
   background-color: #000;
   border-bottom: 1px solid #282828;
-  width: 100%;
-  height: 60px;
+  width: 100vw;
+  height: 80px;
   color: white;
+  display: flex;
+  justify-content: center;
 }
-body .header-nav {
-  width: 100%;
+
+/*DESPLEGABLE*/
+.header-nav {
+  width: 85vw;
   height: 100%;
   display: flex;
   position: relative;
@@ -74,34 +78,36 @@ body .header-nav {
   flex-wrap: nowrap;
   justify-content: space-between;
 }
-body .burger-label {
+
+.burger-label {
   width: 30px;
-  margin-left: 20px;
 }
-body .burger-label svg {
+.burger-label svg {
   width: 30px;
   cursor: pointer;
 }
-body #burger-menu {
+
+#burger-menu {
   display: none;
 }
-body .ul-links {
+
+.ul-links {
   background-color: #000;
   position: absolute;
-  width: 100vw;
-  top: 60px;
+  width: 85vw;
+  top: 80px;
   display: none;
 }
-body .ul-links .link:not(.buttom, .buscar) {
-  margin-left: 20px;
-}
-body .burger-checkbox:checked + .ul-links {
+.burger-checkbox:checked + .ul-links {
   display: block;
 }
 
 .buscar {
   background-color: #282828;
+  width: 100vw;
   display: flex;
+  position: relative;
+  right: 33px;
   gap: 5px;
   height: 40px;
   align-content: center;
@@ -112,17 +118,16 @@ body .burger-checkbox:checked + .ul-links {
   display: flex;
   align-items: center;
   gap: 5px;
-  margin-left: 20px;
+  margin-left: 30px;
 }
 .buscar .buscar-elementos svg {
   width: 15px;
 }
 
 .juegos-contenedor {
-  width: 90vw;
+  width: 85vw;
   height: 60px;
   display: flex;
-  margin-left: 20px;
   align-items: baseline;
 }
 .juegos-contenedor .titulo {
@@ -162,10 +167,9 @@ body .burger-checkbox:checked + .ul-links {
 }
 
 #ul .link-texto {
-  width: 90vw;
+  width: 85vw;
   height: 45px;
   align-content: center;
-  margin-left: 20px;
 }
 #ul .link-texto span {
   font-weight: bold;
@@ -186,7 +190,7 @@ body .burger-checkbox:checked + .ul-links {
 }
 #ul .buttom .buttom-diseño {
   height: 65%;
-  width: 90%;
+  width: 85%;
   background-color: #FCAF17;
   color: #000;
   border-radius: 5px;
@@ -211,7 +215,6 @@ body .burger-checkbox:checked + .ul-links {
 /*USUARIO HEADER*/
 .usuario-contenedor {
   width: 30px;
-  margin-right: 20px;
 }
 .usuario-contenedor .logo-usuario {
   width: 30px;
@@ -223,5 +226,48 @@ body .burger-checkbox:checked + .ul-links {
   align-items: center;
 }
 /*MAIN*/
+/*Con mixin sextion y section-elementos creamos MARGENES y CENTRAMOS secciones*/
+.section {
+  color: #FFFFFF;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.section-elementos {
+  width: 85vw;
+}
+
+.titulos-carrussel {
+  margin-top: 15px;
+}
+.titulos-carrussel p {
+  font-size: 0.7rem;
+  font-weight: lighter;
+  font-family: helveticanowtext;
+  margin-top: 35px;
+}
+.titulos-carrussel h2 {
+  font-family: helveticanowdisplay-bold;
+  padding-top: 5px;
+  margin-bottom: 30px;
+}
+.titulos-carrussel .boton-vermas {
+  width: 85vw;
+  height: 50px;
+  border: solid 2px white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.titulos-carrussel .boton-vermas .ver {
+  text-transform: uppercase;
+  font-size: 1rem;
+}
+
+.carrussel-botones {
+  margin-top: 30px;
+}
 
 /*# sourceMappingURL=main.css.map */
