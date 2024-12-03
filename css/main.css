@@ -226,15 +226,26 @@ body {
   align-items: center;
 }
 /*MAIN*/
-/*Con mixin sextion y section-elementos creamos MARGENES y CENTRAMOS secciones*/
-.section {
+#carrussel {
+  background-color: #000;
   color: #FFFFFF;
   width: 100vw;
   display: flex;
   justify-content: center;
 }
+#carrussel img {
+  background-color: #000;
+}
 
-.section-elementos {
+#trailer {
+  color: #FFFFFF;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  background-color: #000;
+  padding-bottom: 30px;
+}
+#trailer .section-elementos {
   width: 85vw;
 }
 
@@ -268,6 +279,77 @@ body {
 
 .carrussel-botones {
   margin-top: 30px;
+}
+.carrussel-botones ul {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.carrussel-botones ul .largo {
+  width: 40px;
+  height: 8px;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+}
+.carrussel-botones .redondo {
+  width: 8px;
+  height: 8px;
+  background-color: #999999;
+  border-radius: 50%;
+}
+
+#newswire {
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  background-color: #0B0B0B;
+  flex-direction: column;
+  color: #FFFFFF;
+}
+#newswire .section-titulo {
+  padding: 20px 0;
+  width: 85vw;
+}
+
+.tarjeta {
+  width: 85vw;
+  height: auto;
+  border: solid 2px #282828;
+  border-radius: 10px;
+  background-color: #000;
+  margin-bottom: 30px;
+}
+.tarjeta .tarjeta-imagen img {
+  object-fit: contain;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.tarjeta .tarjeta-texto {
+  padding: 20px 20px 25px 20px;
+}
+.tarjeta .tarjeta-texto .etiqueta {
+  font-size: 11px;
+  display: inline-block;
+  padding-bottom: 10px;
+  font-family: helveticanowtext;
+}
+.tarjeta .tarjeta-texto .etiqueta span {
+  text-transform: uppercase;
+}
+.tarjeta .tarjeta-texto time {
+  font-size: 11px;
+  color: #999999;
+  padding-left: 5px;
+  font-family: helveticanowtext;
+  font-weight: lighter;
+}
+.tarjeta .tarjeta-texto p {
+  font-family: helveticanowdisplay-bold;
+  font-size: 17px;
+  line-height: 1.3;
+}
+.tarjeta .tarjeta-texto p span {
+  text-transform: uppercase;
 }
 
 /*# sourceMappingURL=main.css.map */

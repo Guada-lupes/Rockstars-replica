@@ -3,6 +3,7 @@
 
 
 
+
 body{
     background-color: $second-color;
 
@@ -60,6 +61,7 @@ body{
                     display: block;
                 }
 
+        
             .buscar{
                 background-color: $fourth-color;
                 width: 100vw;
@@ -211,25 +213,31 @@ body{
         }
 /*MAIN*/
 
-/*Con mixin sextion y section-elementos creamos MARGENES y CENTRAMOS secciones*/
- @mixin section() {
+
+ #carrussel {
+    background-color: $first-color;
     color: $third-color;
     width: 100vw;
     display: flex;
     justify-content: center;
- }
- @mixin section-elementos (){
-    width: 85vw;
+
+    img{
+        background-color: $first-color;
+    }
  }
 
-.section {
-    @include section();
-}
+ #trailer{
+    color: $third-color;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    background-color: $first-color;
+    padding-bottom: 30px;
 
-.section-elementos {
-    @include section-elementos();
-}
-        
+    .section-elementos {
+        width: 85vw;
+    }
+ } 
 
 .titulos-carrussel{
     margin-top: 15px;
@@ -261,9 +269,90 @@ body{
         }
     }
 }
+
 .carrussel-botones{
     margin-top: 30px;
+    ul{
+        display: flex;
+        flex-direction: row;
+        gap: 10px;
+        .largo{
+            width: 40px;
+            height: 8px;
+            border-radius: 4px;
+            background-color: $third-color;
+        }
+    }   .redondo{
+        width: 8px;
+        height: 8px;
+        background-color: $six-color;
+        border-radius: 50%;
+    }
 }
 
+#newswire{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    background-color: $second-color;
+    flex-direction: column;
+    color: $third-color;
 
+    .section-titulo{
+        padding: 20px 0;
+        width: 85vw;
+    }
+}
 
+@mixin tarjeta (){
+    width: 85vw;
+    height: auto;
+    border: solid 2px $fourth-color;
+    border-radius: 10px;
+    background-color: $first-color;
+    margin-bottom: 30px
+    
+}
+.tarjeta {
+
+    @include tarjeta();
+    
+    .tarjeta-imagen{
+        
+        img{
+            object-fit:contain;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+        
+    }
+    .tarjeta-texto{
+        padding: 20px 20px 25px 20px;
+
+        .etiqueta{
+            font-size: 11px;
+            display: inline-block;
+            padding-bottom: 10px;
+            font-family: helveticanowtext;
+            span{
+                text-transform: uppercase;
+            }
+            }
+            time{
+                font-size: 11px;
+                color: $six-color;
+                padding-left: 5px;
+                font-family: helveticanowtext;
+                font-weight: lighter;
+            }
+            p{
+                font-family: helveticanowdisplay-bold;
+                font-size: 17px;
+                line-height: 1.3;
+            span{
+                text-transform: uppercase;
+            }
+            }
+    }
+
+}
