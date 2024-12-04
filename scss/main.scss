@@ -20,7 +20,7 @@ body{
         display: flex;
         justify-content: center;
         }
-/*DESPLEGABLE*/
+/* MENU DESPLEGABLE*/
     
     .header-nav{
         width: 85vw;
@@ -30,7 +30,8 @@ body{
         align-items: center;
         flex-wrap: nowrap;
         justify-content: space-between;
-        
+
+//LOGO MENU BURGER
         }
         .burger-label{
             width: 30px;
@@ -44,7 +45,7 @@ body{
         #burger-menu{
             display: none;
         }
-
+//LISTA DEL DESPLEGABLE
         .ul-links{
             background-color: #000;
             position: absolute;
@@ -60,8 +61,7 @@ body{
                     
                     display: block;
                 }
-
-        
+//BARRA BUSCAR        
             .buscar{
                 background-color: $fourth-color;
                 width: 100vw;
@@ -86,7 +86,7 @@ body{
                 }
         }
     }
-        
+//IMÁGENES JUEGOS
     .juegos-contenedor{
             width: 85vw;
             height: 60px;
@@ -136,8 +136,9 @@ body{
                 }
             }
         }
-        #ul{
 
+        #ul{
+//LISTADO SIMPLE
             .link-texto{
                 width: 85vw;
                 height: 45px;
@@ -159,6 +160,9 @@ body{
         .asistencia{
             @extend .tienda
         }
+
+//BOTON LAUNCHER
+
         .buttom{
             height: 60px;
             display: flex;
@@ -181,7 +185,7 @@ body{
             }
             }
         }}
-/*LOGO DEL HEADER*/
+/*LOGO ROCKSTAR HEADER*/
     .logo-header{
                 width: 20px;
                 
@@ -192,7 +196,7 @@ body{
                 }
                 
             }
-/*USUARIO HEADER*/
+/*LOGO USUARIO HEADER*/
         .usuario-contenedor{
             width: 30px;
 
@@ -378,7 +382,7 @@ body{
 
     }
 }
-//SECTION DESTACADOS
+//SECTION JUEGOS DESTACADOS
 #destacados{
     width: 100vw;
     color: $third-color;
