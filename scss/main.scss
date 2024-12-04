@@ -213,7 +213,7 @@ body{
         }
 /*MAIN*/
 
-
+//SECTION CARRUSSEL
  #carrussel {
     background-color: $first-color;
     color: $third-color;
@@ -225,7 +225,7 @@ body{
         background-color: $first-color;
     }
  }
-
+//SECTION TRAILER
  #trailer{
     color: $third-color;
     width: 100vw;
@@ -277,19 +277,19 @@ body{
         flex-direction: row;
         gap: 10px;
         .largo{
-            width: 40px;
-            height: 8px;
-            border-radius: 4px;
+            width: 60px;
+            height: 12px;
+            border-radius: 10px;
             background-color: $third-color;
         }
     }   .redondo{
-        width: 8px;
-        height: 8px;
+        width: 12px;
+        height: 12px;
         background-color: $six-color;
         border-radius: 50%;
     }
 }
-
+//SECTION NESWIRE
 #newswire{
     width: 100vw;
     display: flex;
@@ -355,4 +355,203 @@ body{
             }
     }
 
+}
+//BOTÓN VIEW MORE
+.boton-viewmore{
+        
+        display: flex;
+        margin: 20px auto 30px;
+        flex-direction: column;
+        align-items: center;
+    p{
+        font-size: $first-font;
+        color: $third-color;
+        
+    }
+
+    
+    span{
+        background-color: $buttom-color;
+        border-radius: 10px;
+        width: 80px;
+        height: 4px;
+
+    }
+}
+//SECTION DESTACADOS
+#destacados{
+    width: 100vw;
+    color: $third-color;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 40px;
+
+    .section-titulo{
+        padding: 20px 0;
+        width: 85vw;
+        h2{
+
+        }
+    }
+    .juegosdestacados-grid{
+        width: 85vw;
+        display: grid;
+        grid-template-columns: repeat(2,fr);
+        grid-template-rows: repeat(3,fr);
+        gap: 15px;
+
+        img{
+            border-radius: 10px;
+        }
+
+        .caja-grid{
+
+        }
+        .juego-1{
+            grid-column: span 2;
+        }
+        .juego-2{ grid-column: span 1;
+
+        }
+        .juego-3{
+            grid-column: span 1;
+        }
+        .juego-4{
+            grid-column: span 1;
+        }
+        .juego-5{
+            grid-column: span 1;
+        }
+    }
+}
+//SECTION SUSCRÍBITE
+#suscribite{
+    width: 100vw;
+    color: $third-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: $first-color;
+    padding-bottom: 80px;
+    padding-top: 60px;
+
+    .suscribite-contenedor{
+
+        .logo-rockstar{
+            width: 35px;
+            margin-bottom: 10px;
+        }
+        .suscribite{
+            margin-bottom: 20px;
+            h2{
+                margin-bottom: 10px;
+                width: 300px;
+                font-family: $second-font;
+                white-space: pre-wrap;
+            }
+            p{
+                font-size: 17px;
+                line-height: 1.7;
+                width: 260px;
+                text-wrap: pretty;
+            }
+        }
+        .suscribite-boton{
+            height: 65px;
+            width: 65vw;
+            background-color: $first-color;
+            color: $third-color;
+            border-radius: 7px;
+            border: solid 1px $third-color;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            
+            p{
+                text-transform: uppercase;
+                font-size: 16px;
+                font-weight: bold;
+            }
+        }
+    }
+    }
+//FOOTER
+
+footer {
+    width: 100vw;
+    color: $third-color;
+    display: flex;
+    justify-content: center;
+    background-color: $first-color;
+}
+#footer-contenedor{
+    padding: 60px 0;
+    width: 85vw;
+    background-color: $first-color;
+
+//CONTACTO
+    .footer-primeralista{
+        margin-bottom: 60px;
+        font-size: 15px;
+            li{
+                margin-bottom: 15px;
+            }
+        }
+//IDIOMAS
+    .selecciona-idioma{
+        font-size: 12px;
+        margin-bottom: 60px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+            li{
+                svg {
+                    width: 18px;
+            }
+        }
+    }
+    }
+//REDES SOCIALES
+    .redes-sociales{
+        margin-bottom: 60px;
+        img{
+            height: 50px;
+            width: auto;
+            
+        }
+    }
+//AVISOS LEGALES
+    .avisos-legales{
+        font-size: 12px;
+        color: $six-color;
+        margin-bottom: 90px;
+        ul{
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+//SUCURSALES
+    .sucursales{
+        font-family: $second-font;
+        font-size: 12px;
+        width: 60VW;
+        margin: auto;
+
+        p{
+        text-align: center;
+        padding-bottom: 20px;
+        }
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            padding-bottom: 20px;
+        }
+        .numeros-romanos{
+            text-transform: uppercase;
+        }
+    }
 }
