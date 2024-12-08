@@ -68,6 +68,7 @@ body {
   justify-content: center;
 }
 
+/*NAVEGADOR ESCRITORIO*/
 /*DESPLEGABLE*/
 .header-nav {
   width: 85vw;
@@ -518,6 +519,91 @@ footer {
 }
 #footer-contenedor .sucursales .numeros-romanos {
   text-transform: uppercase;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    background-color: #000;
+    border-bottom: 1px solid #282828;
+    width: 100vw;
+    height: 80px;
+    color: white;
+  }
+  .header-nav {
+    display: none;
+  }
+  #nav-escritorio {
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #nav-escritorio ul {
+    width: 85vw;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 13px;
+  }
+  #nav-escritorio ul .logo {
+    padding-top: 5px;
+  }
+  #nav-escritorio ul .logo img {
+    width: 25px;
+  }
+  #nav-escritorio ul .li-juegos {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+  }
+  #nav-escritorio ul .li-juegos span svg {
+    width: 20px;
+  }
+  #nav-escritorio ul .li-mas {
+    display: flex;
+    flex-direction: row;
+    padding-top: 8px;
+  }
+  #nav-escritorio ul .li-mas svg {
+    width: 20px;
+  }
+  #nav-escritorio ul .li-buttom div {
+    background-color: #FCAF17;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  #nav-escritorio ul .li-buttom div span {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  #nav-escritorio ul .lupa svg {
+    width: 25px;
+  }
+  #nav-escritorio ul .user {
+    width: 30px;
+    height: 30px;
+    background-color: #272727;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav-escritorio ul .user i {
+    font-size: 15px;
+    color: rgba(255, 255, 255, 0.562);
+  }
+  #carrussel {
+    background-color: #000;
+    color: #FFFFFF;
+    width: 100vw;
+  }
+  #carrussel img {
+    width: 100%;
+    object-fit: cover;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

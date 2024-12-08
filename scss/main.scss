@@ -20,6 +20,13 @@ body{
         display: flex;
         justify-content: center;
         }
+
+/*NAVEGADOR ESCRITORIO*/
+
+#nav-escritorio{
+    //display: none;
+}
+
 /*DESPLEGABLE*/
     
     .header-nav{
@@ -555,3 +562,104 @@ footer {
         }
     }
 }
+
+//RESPONSIVE
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .header{
+        background-color: $first-color;
+        border-bottom: 1px solid $fourth-color;
+        width: 100vw;
+        height: 80px;
+        color: white;
+        }
+
+    .header-nav{
+        display: none;
+    }
+    #nav-escritorio{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+        ul{
+            width: 85vw;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 13px;
+
+            .logo{
+                padding-top: 5px;
+                img{
+                    width: 25px;
+                }
+            }
+        .li-juegos{
+            display: flex;
+            flex-direction: row;
+            padding-top: 8px;
+
+            span{
+                svg{
+                    width: 20px;
+                }
+            }
+        }
+        .li-mas{
+            display: flex;
+            flex-direction: row;
+            padding-top: 8px;
+            svg{
+                width: 20px;
+            }
+        }
+        .li-buttom{
+            div{
+                background-color: $buttom-color;
+                padding: 8px;
+                border-radius: 5px;
+                span{
+                    color: $first-color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+        .lupa{
+            svg{
+                width: 25px;
+            }
+        }
+
+        .user{
+            width: 30px;
+            height: 30px;
+            background-color: $fifth-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 15px;
+                color: rgba(255, 255, 255, 0.562);
+            }
+        }
+        }}
+
+
+#carrussel {
+    background-color: $first-color;
+    color: $third-color;
+    width: 100vw;
+
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+    }
