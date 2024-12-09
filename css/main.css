@@ -68,7 +68,7 @@ body {
   justify-content: center;
 }
 
-/*DESPLEGABLE*/
+/* MENU DESPLEGABLE*/
 .header-nav {
   width: 85vw;
   height: 100%;
@@ -204,7 +204,7 @@ body {
   font-weight: bold;
 }
 
-/*LOGO DEL HEADER*/
+/*LOGO ROCKSTAR HEADER*/
 .logo-header {
   width: 20px;
 }
@@ -212,7 +212,7 @@ body {
   width: 20px;
 }
 
-/*USUARIO HEADER*/
+/*LOGO USUARIO HEADER*/
 .usuario-contenedor {
   width: 30px;
 }
