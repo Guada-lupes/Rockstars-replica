@@ -20,7 +20,14 @@ body{
         display: flex;
         justify-content: center;
         }
-/* MENU DESPLEGABLE*/
+
+/*NAVEGADOR ESCRITORIO*/
+
+#nav-escritorio{
+    display: none;
+}
+
+/*DESPLEGABLE*/
     
     .header-nav{
         width: 85vw;
@@ -260,7 +267,7 @@ body{
     .boton-vermas{
         width: 85vw;
         height: 50px;
-        border: solid 2px white;
+        border: solid 1px white;
         border-radius: 5px;
         display: flex;
         align-items: center;
@@ -414,6 +421,9 @@ body{
         }
         .juego-1{
             grid-column: span 2;
+            .tablet{
+                display: none;
+            }
         }
         .juego-2{ grid-column: span 1;
 
@@ -558,4 +568,359 @@ footer {
             text-transform: uppercase;
         }
     }
+}
+
+//RESPONSIVE
+
+@media (min-width: 769px) and (max-width: 1024px){
+
+    .header{
+        background-color: $first-color;
+        border-bottom: 1px solid $fourth-color;
+        width: 100vw;
+        height: 80px;
+        color: white;
+        }
+
+    .header-nav{
+        display: none;
+    }
+    #nav-escritorio{
+    width: 100vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+        ul{
+            width: 85vw;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-around;
+            font-size: 13px;
+
+            .logo{
+                padding-top: 5px;
+                img{
+                    width: 25px;
+                }
+            }
+        .li-juegos{
+            display: flex;
+            flex-direction: row;
+            padding-top: 8px;
+
+            span{
+                svg{
+                    width: 20px;
+                }
+            }
+        }
+        .li-mas{
+            display: flex;
+            flex-direction: row;
+            padding-top: 8px;
+            svg{
+                width: 20px;
+            }
+        }
+        .li-buttom{
+            div{
+                background-color: $buttom-color;
+                padding: 8px;
+                border-radius: 5px;
+                span{
+                    color: $first-color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                }
+            }
+        }
+        .lupa{
+            svg{
+                width: 25px;
+            }
+        }
+
+        .user{
+            width: 30px;
+            height: 30px;
+            background-color: $fifth-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            i{
+                font-size: 15px;
+                color: rgba(255, 255, 255, 0.562);
+            }
+        }
+        }}
+
+
+#carrussel {
+    background-color: $first-color;
+    color: $third-color;
+    width: 100vw;
+
+
+    img{
+        width: 100%;
+        object-fit: cover;
+    }
+}
+
+//SECTION TRAILER
+#trailer{
+    .section-elementos {
+        width: 90vw;
+    }
+ } 
+.titulos-carrussel{
+    margin-top: 15px;
+    p{
+        margin-top: 35px;
+    }
+    h2{
+        margin: 0;
+        
+    }
+    .boton-vermas{
+        width: 23vw;
+        height: 50px;
+        position: relative;
+        left: 560px;
+        bottom: 55px;
+    }
+}
+.carrussel-botones{
+    margin: 0;
+
+}
+
+//SECTION NESWIRE
+#newswire{
+    width: 85vw;
+    margin-left: 8vw;
+    margin-top: 5vw;
+    margin-left: 9vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    background-color: $second-color;
+    color: $third-color;
+
+    .section-titulo{
+        padding: 20px 0;
+        grid-column: span 3;
+    }
+}
+
+@mixin tarjeta (){
+    width: 25vw;
+    height: 55vw;
+    grid-column: span 1;
+}
+.tarjeta {
+
+    @include tarjeta();
+    
+    .tarjeta-imagen{
+        
+    }
+    .tarjeta-texto{
+        padding: 20px 20px 25px 20px;
+
+        .etiqueta{
+            font-size: 11px;
+            display: block;
+            padding-bottom: 10px;
+            font-family: helveticanowtext;
+            display: block;
+            position: relative;
+            top: 25px;
+
+            span{
+                text-transform: uppercase;
+            }
+            }
+            time{
+                font-size: 11px;
+                display: block;
+                font-weight: lighter;
+                position: relative;
+                bottom: 25px;
+                padding: 0;
+            }
+            p{
+                padding-top: 5px;
+                width: 18vw;
+            }
+    }
+}
+//BOTÓN VIEW MORE
+.boton-viewmore{
+        
+    display: flex;
+    margin: 20px auto 60px;
+    flex-direction: column;
+    align-items: center;
+}
+//SECTION DESTACADOS
+#destacados{
+    margin-top: 100px;
+
+    .section-titulo{
+        padding: 20px 0;
+        width: 82vw;
+        h2{
+
+        }
+    }
+    .juegosdestacados-grid{
+        width: 82vw;
+        display: grid;
+        grid-template-columns: repeat(4,fr);
+        grid-template-rows: repeat(2,fr);
+        gap: 15px;
+
+        .juego-1{
+            grid-column: span 4;
+            .mobil{
+                display: none;
+            }
+            .tablet{
+                display: block;
+            }
+        }
+    }
+}
+
+//SECTION SUSCRÍBITE
+#suscribite{
+    width: 100vw;
+    display: block;
+    padding-bottom: 80px;
+    padding-top: 60px;
+
+    .suscribite-contenedor{
+        width: 65vw;
+        padding-top: 50px;
+        margin-left: 19vw;
+
+        .logo-rockstar{
+            width: 35px;
+            margin-bottom: 10px;
+            justify-self: center;
+        }
+        .suscribite{
+            margin-bottom: 20px;
+            h2{
+                margin-bottom: 10px;
+                width: auto;
+                font-family: $second-font;
+                white-space: nowrap;
+                font-size:larger;
+                justify-self: center;
+            }
+            p{
+                font-size: 15px;
+                line-height: 1.7;
+                width: auto;
+                text-wrap: pretty;
+                text-align: center;
+            }
+        }
+        .suscribite-boton{
+            height: 65px;
+            width: 25vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            
+        }
+    }
+    }
+//FOOTER
+
+#footer-contenedor{
+    padding: 60px 0;
+    width: 82vw;
+
+//CONTACTO
+    .footer-primeralista{
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+            li{
+                
+                margin-bottom: 15px;
+            }
+        }
+//IDIOMAS
+    .selecciona-idioma{
+        position: relative;
+        left: 500px;
+        bottom: 94px;
+        width: auto;
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+    }
+    }
+//REDES SOCIALES
+    .redes-sociales{
+        margin-bottom: 60px;
+        position: relative;
+        top: 150px;
+        right: 10px;
+        img{
+            height: 50px;
+            width: auto;
+            
+        }
+    }
+//AVISOS LEGALES
+    .avisos-legales{
+        position: relative;
+        bottom: 200px;
+        margin-bottom: 30px;
+        ul{
+            li{
+                margin-bottom: 10px;
+            }
+        }
+    }
+}
+//SUCURSALES
+.sucursales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 82vw;
+    margin: 0;
+
+
+    p{
+    text-align:left;
+    padding-bottom: 20px;
+    display: inline;
+    position: relative;
+    right: 90px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 20px;
+        width: 250px;
+    }
+    .numeros-romanos{
+        display: inline;
+        text-transform: uppercase;
+        left: 100px;
+    }
+}
 }
