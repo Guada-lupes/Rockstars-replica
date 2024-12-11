@@ -55,6 +55,8 @@ a {
 }
 body {
   background-color: #0B0B0B;
+  width: 100vw;
+  position: relative;
   /*HEADER*/
 }
 
@@ -99,7 +101,7 @@ body {
 .ul-links {
   background-color: #000;
   position: absolute;
-  width: 85vw;
+  width: 100vw;
   top: 80px;
   display: none;
 }
@@ -112,7 +114,6 @@ body {
   width: 100vw;
   display: flex;
   position: relative;
-  right: 33px;
   gap: 5px;
   height: 40px;
   align-content: center;
@@ -359,9 +360,11 @@ body {
 
 .boton-viewmore {
   display: flex;
-  margin: 20px auto 30px;
+  margin-top: 20px;
+  margin-bottom: 30px;
   flex-direction: column;
   align-items: center;
+  width: 82vw;
 }
 .boton-viewmore p {
   font-size: helveticanowtex-black;
@@ -384,7 +387,7 @@ body {
 }
 #destacados .section-titulo {
   padding: 20px 0;
-  width: 85vw;
+  width: 82vw;
 }
 #destacados .juegosdestacados-grid {
   width: 85vw;
@@ -529,13 +532,6 @@ footer {
 }
 
 @media (min-width: 769px) and (max-width: 1024px) {
-  .header {
-    background-color: #000;
-    border-bottom: 1px solid #282828;
-    width: 100vw;
-    height: 80px;
-    color: white;
-  }
   .header-nav {
     display: none;
   }
@@ -568,6 +564,12 @@ footer {
   #nav-escritorio ul .li-juegos span svg {
     width: 20px;
   }
+  #nav-escritorio ul #tienda {
+    display: none;
+  }
+  #nav-escritorio ul #asistencia-tecnica {
+    display: none;
+  }
   #nav-escritorio ul .li-mas {
     display: flex;
     flex-direction: row;
@@ -578,7 +580,7 @@ footer {
   }
   #nav-escritorio ul .li-buttom div {
     background-color: #FCAF17;
-    padding: 8px;
+    padding: 7px;
     border-radius: 5px;
   }
   #nav-escritorio ul .li-buttom div span {
@@ -817,6 +819,421 @@ footer {
     display: inline;
     text-transform: uppercase;
     left: 100px;
+  }
+}
+@media (min-width: 1024px) {
+  .header-nav {
+    display: none;
+  }
+  #nav-escritorio {
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  #nav-escritorio ul {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 15px;
+  }
+  #nav-escritorio ul .logo {
+    padding-top: 5px;
+  }
+  #nav-escritorio ul .logo img {
+    width: 30px;
+  }
+  #nav-escritorio ul .li-juegos {
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+  }
+  #nav-escritorio ul .li-juegos:hover {
+    border-bottom: solid 1px white;
+    cursor: pointer;
+  }
+  #nav-escritorio ul .li-juegos span svg {
+    width: 20px;
+  }
+  #nav-escritorio ul .lista-simple:hover {
+    border-bottom: solid 1px white;
+    cursor: pointer;
+  }
+  #nav-escritorio ul #tienda {
+    display: flex;
+    gap: 4px;
+  }
+  #nav-escritorio ul #tienda:hover {
+    border-bottom: solid 1px white;
+    cursor: pointer;
+  }
+  #nav-escritorio ul #tienda .logo-ir {
+    width: 15px;
+  }
+  #nav-escritorio ul #tienda .logo-ir svg {
+    position: relative;
+    top: 2px;
+  }
+  #nav-escritorio ul #asistencia-tecnica {
+    display: flex;
+    gap: 4px;
+  }
+  #nav-escritorio ul #asistencia-tecnica:hover {
+    border-bottom: solid 1px white;
+    cursor: pointer;
+  }
+  #nav-escritorio ul #asistencia-tecnica .logo-ir {
+    width: 15px;
+  }
+  #nav-escritorio ul #asistencia-tecnica .logo-ir svg {
+    position: relative;
+    top: 2px;
+  }
+  #nav-escritorio ul .li-mas {
+    display: none;
+  }
+  #nav-escritorio ul .li-buttom div {
+    background-color: #FCAF17;
+    padding: 8px;
+    border-radius: 5px;
+  }
+  #nav-escritorio ul .li-buttom div:hover {
+    cursor: pointer;
+  }
+  #nav-escritorio ul .li-buttom div span {
+    color: #000;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 0;
+  }
+  #nav-escritorio ul .lupa:hover {
+    cursor: pointer;
+  }
+  #nav-escritorio ul .lupa svg {
+    width: 25px;
+  }
+  #nav-escritorio ul .user {
+    width: 25px;
+    height: 25px;
+    background-color: #272727;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  #nav-escritorio ul .user:hover {
+    cursor: pointer;
+  }
+  #nav-escritorio ul .user i {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.562);
+  }
+  #carrussel {
+    background-color: #000;
+    color: #FFFFFF;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+  }
+  #carrussel img {
+    background-color: #000;
+    object-fit: cover;
+  }
+  #trailer {
+    color: #FFFFFF;
+    width: 15vw;
+    height: auto;
+    display: block;
+    background-color: #000;
+    padding-bottom: 0;
+    margin: 0;
+    position: absolute;
+    left: 920px;
+    bottom: 200px;
+  }
+  .titulos-carrussel {
+    margin-top: 0;
+  }
+  .titulos-carrussel p {
+    font-size: 15px;
+    font-weight: lighter;
+    font-family: helveticanowtext;
+    margin-top: 0;
+    width: 15vw;
+  }
+  .titulos-carrussel p:hover {
+    cursor: pointer;
+  }
+  .titulos-carrussel h2 {
+    font-family: helveticanowdisplay-bold;
+    padding-top: 5px;
+    margin-bottom: 30px;
+    font-size: 40px;
+    width: 15vw;
+  }
+  .titulos-carrussel h2:hover {
+    cursor: pointer;
+  }
+  .titulos-carrussel .boton-vermas {
+    width: 18vw;
+    height: 55px;
+    border: solid 1px white;
+    border-radius: 5px;
+    transition-duration: 100;
+  }
+  .titulos-carrussel .boton-vermas:hover {
+    border: none;
+    border-radius: none;
+    color: #000;
+    background-color: #FCAF17;
+    cursor: pointer;
+  }
+  .titulos-carrussel .boton-vermas .ver {
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .carrussel-botones {
+    position: relative;
+    top: 205px;
+  }
+  .carrussel-botones ul {
+    gap: 20px;
+  }
+  .carrussel-botones ul .largo {
+    width: 63px;
+    height: 12px;
+  }
+  .carrussel-botones ul .largo:hover {
+    cursor: pointer;
+  }
+  .carrussel-botones .redondo {
+    width: 15px;
+    height: 15px;
+    background-color: #999999;
+  }
+  .carrussel-botones .redondo:hover {
+    cursor: pointer;
+  }
+  #newswire {
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1vw;
+  }
+  #newswire .section-titulo {
+    padding: 20px 0;
+    grid-column: span 3;
+  }
+  #newswire .section-titulo h3 {
+    font-size: 30px;
+  }
+  #newswire .section-titulo h3:hover {
+    cursor: pointer;
+  }
+  .tarjeta {
+    width: 350px;
+    height: 40vw;
+    grid-column: span 1;
+  }
+  .tarjeta:hover {
+    cursor: pointer;
+  }
+  .tarjeta .tarjeta-texto {
+    padding: 15px 10px 25px 20px;
+  }
+  .tarjeta .tarjeta-texto time {
+    padding-left: 10px;
+  }
+  .tarjeta .tarjeta-texto p {
+    width: auto;
+    font-size: 15px;
+  }
+  .boton-viewmore {
+    display: flex;
+    margin: 20px auto 60px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    width: 120px;
+    border-radius: 5px;
+  }
+  .boton-viewmore:hover {
+    cursor: pointer;
+    background-color: #FCAF17;
+  }
+  .boton-viewmore p {
+    font-size: helveticanowtex-black;
+    color: #FFFFFF;
+  }
+  .boton-viewmore p:hover {
+    color: #000;
+  }
+  .boton-viewmore span {
+    background-color: #FCAF17;
+    border-radius: 10px;
+    width: 90px;
+    height: 4px;
+  }
+  .boton-viewmore span:hover {
+    font-weight: bold;
+  }
+  #destacados {
+    margin-top: 100px;
+  }
+  #destacados .section-titulo {
+    width: 90vw;
+  }
+  #destacados .section-titulo h2 {
+    font-size: 30px;
+  }
+  #destacados .section-titulo:hover {
+    cursor: pointer;
+  }
+  #destacados .juegosdestacados-grid {
+    width: 90vw;
+  }
+  #destacados .juegosdestacados-grid .caja-grid:hover {
+    transform: scale(1.03);
+  }
+  #destacados .juegosdestacados-grid .juego-1 {
+    grid-column: span 4;
+  }
+  #destacados .juegosdestacados-grid .juego-1 .mobil {
+    display: none;
+  }
+  #destacados .juegosdestacados-grid .juego-1 .tablet {
+    display: block;
+  }
+  #suscribite {
+    width: 100vw;
+    display: block;
+    padding-bottom: 80px;
+    padding-top: 60px;
+  }
+  #suscribite .suscribite-contenedor {
+    width: 65vw;
+    padding-top: 50px;
+    margin-left: 19vw;
+  }
+  #suscribite .suscribite-contenedor .logo-rockstar {
+    width: 35px;
+    margin-bottom: 10px;
+    justify-self: center;
+  }
+  #suscribite .suscribite-contenedor .suscribite {
+    margin-bottom: 20px;
+  }
+  #suscribite .suscribite-contenedor .suscribite h2 {
+    margin-bottom: 10px;
+    width: auto;
+    font-family: helveticanowdisplay-bold;
+    white-space: nowrap;
+    font-size: larger;
+    justify-self: center;
+  }
+  #suscribite .suscribite-contenedor .suscribite p {
+    font-size: 15px;
+    line-height: 1.7;
+    width: auto;
+    text-wrap: pretty;
+    text-align: center;
+  }
+  #suscribite .suscribite-contenedor .suscribite-boton {
+    height: 65px;
+    width: 25vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-self: center;
+  }
+  #suscribite .suscribite-contenedor .suscribite-boton:hover {
+    cursor: pointer;
+    background-color: #272727;
+  }
+  #footer-contenedor {
+    padding: 60px 0;
+    width: 90vw;
+    position: relative;
+  }
+  #footer-contenedor .footer-primeralista {
+    margin-bottom: 60px;
+    display: flex;
+    flex-direction: row;
+    gap: 14px;
+  }
+  #footer-contenedor .footer-primeralista li {
+    margin-bottom: 15px;
+  }
+  #footer-contenedor .footer-primeralista li:hover {
+    color: #FCAF17;
+    cursor: pointer;
+  }
+  #footer-contenedor .selecciona-idioma {
+    position: relative;
+    left: 1250px;
+    bottom: 93px;
+    width: 200px;
+  }
+  #footer-contenedor .selecciona-idioma ul {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+  #footer-contenedor .redes-sociales {
+    margin-bottom: 60px;
+    position: absolute;
+    top: 150px;
+    right: 0px;
+  }
+  #footer-contenedor .redes-sociales img {
+    height: 50px;
+    width: auto;
+  }
+  #footer-contenedor .avisos-legales {
+    position: absolute;
+    top: 150px;
+    margin-bottom: 30px;
+  }
+  #footer-contenedor .avisos-legales ul li {
+    margin-bottom: 10px;
+  }
+  #footer-contenedor .avisos-legales ul li:hover {
+    color: #FCAF17;
+    cursor: pointer;
+  }
+  .sucursales {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding-top: 160px;
+  }
+  .sucursales p {
+    text-align: left;
+    padding-bottom: 20px;
+    display: inline;
+    position: relative;
+    right: 320px;
+  }
+  .sucursales ul {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 10px;
+    width: 250px;
+  }
+  .sucursales .numeros-romanos {
+    display: inline;
+    text-transform: uppercase;
+    left: 300px;
   }
 }
 

@@ -6,6 +6,8 @@
 
 body{
     background-color: $second-color;
+    width: 100vw;
+    position: relative;
 
 /*HEADER*/
     
@@ -44,7 +46,6 @@ body{
             svg{
                 width: 30px;
                 cursor: pointer;
-                
                  }
         }
         
@@ -55,7 +56,7 @@ body{
         .ul-links{
             background-color: #000;
             position: absolute;
-            width: 85vw;
+            width: 100vw;
             top:80px;
             display: none;
 
@@ -67,14 +68,13 @@ body{
                     
                     display: block;
                 }
-
         
             .buscar{
                 background-color: $fourth-color;
                 width: 100vw;
                 display: flex;
                 position: relative;
-                right: 33px;
+
                 gap: 5px;
                 height: 40px;
                 align-content: center;
@@ -367,16 +367,16 @@ body{
 .boton-viewmore{
         
         display: flex;
-        margin: 20px auto 30px;
+        margin-top: 20px;
+        margin-bottom: 30px;
         flex-direction: column;
         align-items: center;
+        width: 82vw;
     p{
         font-size: $first-font;
         color: $third-color;
         
     }
-
-    
     span{
         background-color: $buttom-color;
         border-radius: 10px;
@@ -396,7 +396,7 @@ body{
 
     .section-titulo{
         padding: 20px 0;
-        width: 85vw;
+        width: 82vw;
         h2{
 
         }
@@ -570,14 +570,6 @@ footer {
 
 @media (min-width: 769px) and (max-width: 1024px){
 
-    .header{
-        background-color: $first-color;
-        border-bottom: 1px solid $fourth-color;
-        width: 100vw;
-        height: 80px;
-        color: white;
-        }
-
     .header-nav{
         display: none;
     }
@@ -612,6 +604,12 @@ footer {
                 }
             }
         }
+        #tienda{
+            display: none;
+        }
+        #asistencia-tecnica{
+            display: none;
+        }
         .li-mas{
             display: flex;
             flex-direction: row;
@@ -623,7 +621,7 @@ footer {
         .li-buttom{
             div{
                 background-color: $buttom-color;
-                padding: 8px;
+                padding: 7px;
                 border-radius: 5px;
                 span{
                     color: $first-color;
@@ -917,6 +915,473 @@ footer {
         display: inline;
         text-transform: uppercase;
         left: 100px;
+    }
+}
+}
+
+@media (min-width: 1024px){
+    
+    .header-nav{
+        display: none;
+    }
+    #nav-escritorio{
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+
+        ul{
+            width: 90%;
+            height: 100%;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            font-size: 15px;
+
+            .logo{
+                padding-top: 5px;
+                img{
+                    width: 30px;
+                }
+            }
+        .li-juegos{
+            display: flex;
+            flex-direction: row;
+            padding-top: 5px;
+            &:hover {
+                border-bottom: solid 1px white;
+                cursor: pointer;
+            }
+
+            span{
+                svg{
+                    width: 20px;
+                }
+            }
+        }
+        .lista-simple{
+            &:hover {
+                border-bottom: solid 1px white;
+                cursor: pointer;
+            }
+        }
+        #tienda{
+            display: flex;
+            gap:4px;
+            &:hover {
+                border-bottom: solid 1px white;
+                cursor: pointer;
+            }
+            .logo-ir{
+                width: 15px;
+                svg{
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+        #asistencia-tecnica{
+            display: flex;
+            gap: 4px;
+            &:hover {
+                border-bottom: solid 1px white;
+                cursor: pointer;
+            }
+            .logo-ir{
+                width: 15px;
+                svg{
+                    position: relative;
+                    top: 2px;
+                }
+            }
+        }
+        .li-mas{
+            display: none;
+        }
+        .li-buttom{
+            div{
+                background-color: $buttom-color;
+                padding: 8px;
+                border-radius: 5px;
+                &:hover{
+                    cursor: pointer;
+                }
+                span{
+                    color: $first-color;
+                    text-transform: uppercase;
+                    font-weight: bold;
+                    letter-spacing: 0;
+                }
+            }
+        }
+        .lupa{
+            &:hover{
+                cursor: pointer;
+            }
+            svg{
+                width: 25px;
+            }
+        }
+        .user{
+            width: 25px;
+            height: 25px;
+            background-color: $fifth-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &:hover{
+                cursor: pointer;
+            }
+            i{
+                font-size: 11px;
+                color: rgba(255, 255, 255, 0.562);
+            }
+        }
+        }}
+//SECTION CARRUSSEL
+#carrussel {
+    background-color: $first-color;
+    color: $third-color;
+    width: 100vw;
+    height: 500px;
+    display: flex;
+    justify-content: flex-start;
+    margin: 0;
+
+    img{
+        background-color: $first-color;
+        object-fit: cover;
+    }
+ }
+//SECTION TRAILER
+#trailer{
+    color: $third-color;
+    width: 15vw;
+    height: auto;
+    display: block;
+    background-color: $first-color;
+    padding-bottom: 0;
+    margin: 0;
+    position: absolute;
+    left: 920px;
+    bottom: 200px;
+ } 
+
+.titulos-carrussel{
+    margin-top: 0;
+    p{
+        font-size: 15px;
+        font-weight:lighter;
+        font-family: helveticanowtext;
+        margin-top: 0;
+        width: 15vw;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+    h2{
+        font-family: helveticanowdisplay-bold;
+        padding-top: 5px;
+        margin-bottom: 30px;
+        font-size: 40px;
+        width: 15vw;
+        &:hover{
+            cursor: pointer;
+        }
+        
+    }
+    .boton-vermas{
+        width: 18vw;
+        height: 55px;
+        border: solid 1px white;
+        border-radius: 5px;
+        transition-duration: 100;
+        &:hover{
+            border: none;
+            border-radius: none;
+            color: $first-color;
+            background-color: $buttom-color;
+            cursor: pointer;
+        }
+        .ver{
+            font-size: 20px;
+            font-weight: bold;
+        }
+    }
+}
+.carrussel-botones{
+    position: relative;
+    top: 205px;
+    ul{
+        gap: 20px;
+        .largo{
+            width: 63px;
+            height: 12px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }   .redondo{
+        width: 15px;
+        height: 15px;
+        background-color: $six-color;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}
+//SECTION NESWIRE
+#newswire{
+    width: 90vw;
+    margin-left: 5vw;
+    margin-top: 5vw;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3,1fr);
+    gap: 1vw;
+
+    .section-titulo{
+        padding: 20px 0;
+        grid-column: span 3;
+        h3{
+            font-size: 30px;
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+}
+@mixin tarjeta (){
+    width: 350px;
+    height: 40vw;
+    grid-column: span 1;
+    &:hover{
+        cursor: pointer;
+    }
+}
+.tarjeta {
+
+    @include tarjeta();
+    
+    .tarjeta-imagen{
+    }
+    .tarjeta-texto{
+        padding: 15px 10px 25px 20px;
+            time{
+                padding-left: 10px;
+            }
+            p{
+                width: auto;
+                font-size: 15px;
+            }
+    }
+}
+//BOTÓN VIEW MORE
+.boton-viewmore{
+        
+    display: flex;
+    margin: 20px auto 60px;
+    flex-direction: column;
+    align-items: center;
+    font-size: 20px;
+    width: 120px;
+    border-radius: 5px;
+    &:hover{
+        cursor: pointer;
+        background-color: $buttom-color;
+    }
+    p{
+        font-size: $first-font;
+        color: $third-color;
+        &:hover{
+            color: $first-color;
+        }
+        
+    }
+    span{
+        background-color: $buttom-color;
+        border-radius: 10px;
+        width: 90px;
+        height: 4px;
+        &:hover{
+            font-weight: bold;
+        }
+    }
+}
+//SECTION DESTACADOS
+#destacados{
+    margin-top: 100px;
+
+    .section-titulo{
+        width: 90vw;
+        h2{
+            font-size: 30px;
+        }
+        &:hover{
+        cursor: pointer;
+        }
+    }
+    .juegosdestacados-grid{
+        width: 90vw;
+
+        .caja-grid{
+            &:hover{
+                transform: scale(1.03);
+            }
+        }
+
+        .juego-1{
+            grid-column: span 4;
+            .mobil{
+                display: none;
+            }
+            .tablet{
+                display: block;
+            }
+        }
+    }
+}
+//SECTION SUSCRÍBITE
+#suscribite{
+    width: 100vw;
+    display: block;
+    padding-bottom: 80px;
+    padding-top: 60px;
+
+    .suscribite-contenedor{
+        width: 65vw;
+        padding-top: 50px;
+        margin-left: 19vw;
+
+        .logo-rockstar{
+            width: 35px;
+            margin-bottom: 10px;
+            justify-self: center;
+        }
+        .suscribite{
+            margin-bottom: 20px;
+            h2{
+                margin-bottom: 10px;
+                width: auto;
+                font-family: $second-font;
+                white-space: nowrap;
+                font-size:larger;
+                justify-self: center;
+            }
+            p{
+                font-size: 15px;
+                line-height: 1.7;
+                width: auto;
+                text-wrap: pretty;
+                text-align: center;
+            }
+        }
+        .suscribite-boton{
+            height: 65px;
+            width: 25vw;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            justify-self: center;
+            &:hover{
+                cursor: pointer;
+                background-color: $fifth-color;
+            }
+            
+        }
+    }
+    }
+//FOOTER
+
+#footer-contenedor{
+    padding: 60px 0;
+    width: 90vw;
+    position: relative;
+
+//CONTACTO
+    .footer-primeralista{
+        margin-bottom: 60px;
+        display: flex;
+        flex-direction: row;
+        gap: 14px;
+            li{
+                
+                margin-bottom: 15px;
+                &:hover{
+                    color: $buttom-color;
+                    cursor: pointer;
+                }
+            }
+        }
+//IDIOMAS
+    .selecciona-idioma{
+        position: relative;
+        left: 1250px;
+        bottom: 93px;
+        width: 200px;
+        ul{
+            display: flex;
+            flex-direction: row;
+            gap: 5px;
+    }
+    }
+//REDES SOCIALES
+    .redes-sociales{
+        margin-bottom: 60px;
+        position: absolute;
+        top: 150px;
+        right: 0px;
+        img{
+            height: 50px;
+            width: auto;
+            
+        }
+    }
+//AVISOS LEGALES
+    .avisos-legales{
+        position: absolute;
+        top: 150px;
+        margin-bottom: 30px;
+        ul{
+            li{
+                margin-bottom: 10px;
+                &:hover{
+                    color: $buttom-color;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+//SUCURSALES
+.sucursales{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    margin: 0;
+    padding-top: 160px;
+
+
+    p{
+    text-align:left;
+    padding-bottom: 20px;
+    display: inline;
+    position: relative;
+    right: 320px;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        padding-bottom: 10px;
+        width: 250px;
+    }
+    .numeros-romanos{
+        display: inline;
+        text-transform: uppercase;
+        left: 300px;
     }
 }
 }
