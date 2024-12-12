@@ -12,11 +12,12 @@ $seven-color: #1A1A1A; /* hover suscríbite*/
 
 /*font-size*/
 @font-face {
-    font-family: helveticanowtext;
+    font-family: "helveticanowtext";
     src: url(../fonts/helvetica-now-font-family-1732613676-0/helveticanowtext-black-demo.ttf);
+    font-style: bold;
 }
 @font-face {
-    font-family: helveticanowdisplay-bold;
+    font-family: "helveticanowdisplay-bold";
     src: url(../fonts/helvetica-now-display/HelveticaNowDisplay-Bold.ttf);
 }
 

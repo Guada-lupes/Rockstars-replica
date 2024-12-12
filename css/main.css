@@ -46,11 +46,12 @@ a {
 /* hover suscríbite*/
 /*font-size*/
 @font-face {
-  font-family: helveticanowtext;
+  font-family: "helveticanowtext";
   src: url(../fonts/helvetica-now-font-family-1732613676-0/helveticanowtext-black-demo.ttf);
+  font-style: bold;
 }
 @font-face {
-  font-family: helveticanowdisplay-bold;
+  font-family: "helveticanowdisplay-bold";
   src: url(../fonts/helvetica-now-display/HelveticaNowDisplay-Bold.ttf);
 }
 body {
@@ -77,7 +78,7 @@ body {
 
 /*DESPLEGABLE*/
 .header-nav {
-  width: 85vw;
+  width: 90%;
   height: 100%;
   display: flex;
   position: relative;
@@ -232,10 +233,14 @@ body {
   align-items: center;
 }
 /*MAIN*/
+main {
+  width: 100vw;
+}
+
 #carrussel {
   background-color: #000;
   color: #FFFFFF;
-  width: 100vw;
+  width: 99vw;
   display: flex;
   justify-content: center;
 }
@@ -250,6 +255,7 @@ body {
   justify-content: center;
   background-color: #000;
   padding-bottom: 30px;
+  overflow: hidden;
 }
 #trailer .section-elementos {
   width: 85vw;
@@ -261,11 +267,11 @@ body {
 .titulos-carrussel p {
   font-size: 0.7rem;
   font-weight: lighter;
-  font-family: helveticanowtext;
+  font-family: "helveticanowtext";
   margin-top: 35px;
 }
 .titulos-carrussel h2 {
-  font-family: helveticanowdisplay-bold;
+  font-family: "helveticanowdisplay-bold";
   padding-top: 5px;
   margin-bottom: 30px;
 }
@@ -946,7 +952,7 @@ footer {
   }
   #trailer {
     color: #FFFFFF;
-    width: 15vw;
+    width: 20vw;
     height: auto;
     display: block;
     background-color: #000;
@@ -1178,7 +1184,7 @@ footer {
   }
   #footer-contenedor .selecciona-idioma {
     position: relative;
-    left: 1250px;
+    left: 1000px;
     bottom: 93px;
     width: 200px;
   }
@@ -1191,7 +1197,7 @@ footer {
     margin-bottom: 60px;
     position: absolute;
     top: 150px;
-    right: 0px;
+    right: -10px;
   }
   #footer-contenedor .redes-sociales img {
     height: 50px;
@@ -1222,7 +1228,7 @@ footer {
     padding-bottom: 20px;
     display: inline;
     position: relative;
-    right: 320px;
+    right: 260px;
   }
   .sucursales ul {
     display: flex;
@@ -1233,7 +1239,7 @@ footer {
   .sucursales .numeros-romanos {
     display: inline;
     text-transform: uppercase;
-    left: 300px;
+    left: 260px;
   }
 }
 
