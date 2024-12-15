@@ -59,7 +59,7 @@ body{
             width: 100vw;
             top:80px;
             display: none;
-
+            font-family: $first-font;
             .link:not(.buttom, .buscar){
                 
             }
@@ -254,11 +254,11 @@ main{
     p{
         font-size: 0.7rem;
         font-weight:lighter;
-        font-family: "helveticanowtext";
+        font-family: $first-font;
         margin-top: 35px;
     }
     h2{
-        font-family: "helveticanowdisplay-bold";
+        font-family: $second-font;
         padding-top: 5px;
         margin-bottom: 30px;
         
@@ -271,6 +271,7 @@ main{
         display: flex;
         align-items: center;
         justify-content: center;
+        font-family: $first-font;
 
 
         .ver{
@@ -311,6 +312,7 @@ main{
     .section-titulo{
         padding: 20px 0;
         width: 85vw;
+        font-family: $second-font
     }
 }
 
@@ -343,7 +345,7 @@ main{
             font-size: 11px;
             display: inline-block;
             padding-bottom: 10px;
-            font-family: helveticanowtext;
+            font-family: $first-font;
             span{
                 text-transform: uppercase;
             }
@@ -352,11 +354,11 @@ main{
                 font-size: 11px;
                 color: $six-color;
                 padding-left: 5px;
-                font-family: helveticanowtext;
+                font-family: $first-font;
                 font-weight: lighter;
             }
             p{
-                font-family: helveticanowdisplay-bold;
+                font-family: $second-font;
                 font-size: 17px;
                 line-height: 1.3;
             span{
@@ -370,14 +372,14 @@ main{
 .boton-viewmore{
         
         display: flex;
-        margin-top: 20px;
-        margin-bottom: 30px;
         flex-direction: column;
         align-items: center;
+        margin: 20px auto 30px auto;
         width: 82vw;
     p{
         font-size: $first-font;
         color: $third-color;
+        font-family: $first-font;
         
     }
     span{
@@ -401,7 +403,7 @@ main{
         padding: 20px 0;
         width: 82vw;
         h2{
-
+            font-family: $second-font;
         }
     }
     .juegosdestacados-grid{
@@ -468,6 +470,7 @@ main{
                 line-height: 1.7;
                 width: 260px;
                 text-wrap: pretty;
+                font-family: $first-font;
             }
         }
         .suscribite-boton{
@@ -485,6 +488,7 @@ main{
                 text-transform: uppercase;
                 font-size: 16px;
                 font-weight: bold;
+                font-family: $first-font;
             }
         }
     }
@@ -507,6 +511,7 @@ footer {
     .footer-primeralista{
         margin-bottom: 60px;
         font-size: 15px;
+        font-family: $first-font;
             li{
                 margin-bottom: 15px;
             }
@@ -515,6 +520,7 @@ footer {
     .selecciona-idioma{
         font-size: 12px;
         margin-bottom: 60px;
+        font-family: $first-font;
         ul{
             display: flex;
             flex-direction: row;
@@ -540,6 +546,7 @@ footer {
         font-size: 12px;
         color: $six-color;
         margin-bottom: 90px;
+        font-family: $first-font;
         ul{
             li{
                 margin-bottom: 10px;
@@ -924,6 +931,10 @@ footer {
 
 @media (min-width: 1024px){
     
+    .header{
+        position:fixed;
+        z-index: 10;
+    }
     .header-nav{
         display: none;
     }
@@ -1043,6 +1054,9 @@ footer {
             }
         }
         }}
+    main{
+        padding-top: 80px;
+    }
 //SECTION CARRUSSEL
 #carrussel {
     background-color: $first-color;
