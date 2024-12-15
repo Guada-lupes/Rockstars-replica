@@ -576,7 +576,7 @@ footer {
     }
 }
 
-//RESPONSIVE
+//VERSION TABLET
 
 @media (min-width: 769px) and (max-width: 1024px){
 
@@ -596,6 +596,7 @@ footer {
             align-items: center;
             justify-content: space-around;
             font-size: 13px;
+            font-family: $first-font;
 
             .logo{
                 padding-top: 5px;
@@ -929,6 +930,7 @@ footer {
 }
 }
 
+//VERSION ESCRITORIO
 @media (min-width: 1024px){
     
     .header{
@@ -952,6 +954,7 @@ footer {
             align-items: center;
             justify-content: space-between;
             font-size: 15px;
+            font-family: $second-font;
 
             .logo{
                 padding-top: 5px;

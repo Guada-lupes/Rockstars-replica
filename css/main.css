@@ -566,6 +566,7 @@ footer {
     align-items: center;
     justify-content: space-around;
     font-size: 13px;
+    font-family: "helveticanowtext";
   }
   #nav-escritorio ul .logo {
     padding-top: 5px;
@@ -860,6 +861,7 @@ footer {
     align-items: center;
     justify-content: space-between;
     font-size: 15px;
+    font-family: "helveticanowdisplay-bold";
   }
   #nav-escritorio ul .logo {
     padding-top: 5px;
